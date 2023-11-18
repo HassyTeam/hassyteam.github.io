@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap');
+
+h1,h2,h3,p{
+    font-family: 'Kufam', sans-serif;
+}
+
+body {
+    background: linear-gradient(252deg, #000AFF 0%, #00E0FF 100%);
+}
+
+.pfp{
+    width: 300px;
+    height: 300px;
+    border-radius: 69px;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+.hi-im-xilliam{
+    color: #FFF;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 38%;
+    margin-top: 1%;
+}
+
+.about-small{
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 39%;
+}
+
+.about{
+    width: 1154px;
+    height: 412px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: #FFF;
+    margin-left: 28%;
+    margin-top: 1%;
+}
+
+.about-text{
+    color: #000;
+    font-family: Kufam;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1%;
+    line-height: 50px;
+}
