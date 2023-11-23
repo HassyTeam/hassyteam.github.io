@@ -12,7 +12,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 69px;
-    margin-left: 45%;
+    margin-left: 44%;
     margin-top: 2%;
 }
 
@@ -21,7 +21,7 @@ body {
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
-    margin-left: 38%;
+    margin-left: 37%;
     margin-top: 1%;
 }
 
@@ -30,7 +30,7 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    margin-left: 39%;
+    margin-left: 38%;
 }
 
 .about{
@@ -39,7 +39,7 @@ body {
     flex-shrink: 0;
     border-radius: 26px;
     background: #FFF;
-    margin-left: 28%;
+    margin-left: 27%;
     margin-top: 1%;
 }
 
