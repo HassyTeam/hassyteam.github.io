@@ -11,14 +11,16 @@ div {
     -webkit-box-sizing:border-box;
 }
 
-.col-6{
-    /* border:1px solid red; */ /*for debugging*/ 
-    }
-    
-    .my-vh{
-      height: 60vh;
-    }
-    
-    .my-card{
-      
-    }
+img {
+    float: left;
+    height: 40ch;
+    object-fit: cover;
+}
+
+.card {
+    transition: ease, transform .6s;
+}
+
+.card:hover {
+    transform: scale(109%);
+}
