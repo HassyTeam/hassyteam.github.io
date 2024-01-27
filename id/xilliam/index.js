@@ -68,9 +68,9 @@ $(document).ready(()=>{
   })
 });
 
-function makecowsay(){
+function makecowsay(txt){
   console.log("moo moo")
-  fetch("https://easyapis.honeybeeks.net/api/cowsay?text=xilliams code is the best")
+  fetch("https://easyapis.honeybeeks.net/api/cowsay?text="+txt)
     .then(response => response.text())
     .then((response) => {
         document.getElementById("cowsay").innerText = response
@@ -78,3 +78,12 @@ function makecowsay(){
     })
     .catch(err => console.log(err))
 }
+
+document.getElementById('cowinput').style.width="600px";
+document.getElementById('cowinput').value="what do you have on your mind?"
+const input = document.getElementById('cowinput'); 
+     
+input.addEventListener('input', function() { 
+  console.log('Input value changed:', input.value); 
+  makecowsay(input.value)
+}); 

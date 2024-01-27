@@ -55,3 +55,7 @@ p {
 .box {
     width: 350px;
 }
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+
