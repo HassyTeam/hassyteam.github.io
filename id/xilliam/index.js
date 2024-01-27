@@ -1,8 +1,14 @@
+
 // Make the DIV element draggable:
 dragElement(document.getElementById("info"));
+dragElement(document.getElementById("cow"));
 
 document.getElementById("info").style.top = "30" + "px";
 document.getElementById("info").style.left = "50" + "px";
+
+document.getElementById("cow").style.top = "600" + "px";
+document.getElementById("cow").style.left = "80" + "px";
+
 
 
 function dragElement(elmnt) {
@@ -61,3 +67,14 @@ $(document).ready(()=>{
       $("#ip").html(data.ip);
   })
 });
+
+function makecowsay(){
+  console.log("moo moo")
+  fetch("https://easyapis.honeybeeks.net/api/cowsay?text=xilliams code is the best")
+    .then(response => response.text())
+    .then((response) => {
+        document.getElementById("cowsay").innerText = response
+        console.log(response)
+    })
+    .catch(err => console.log(err))
+}
