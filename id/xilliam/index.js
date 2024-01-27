@@ -1,5 +1,8 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("draggable"));
+dragElement(document.getElementById("info"));
+
+document.getElementById("info").style.top = "30" + "px";
+document.getElementById("info").style.left = "50" + "px";
 
 
 function dragElement(elmnt) {
