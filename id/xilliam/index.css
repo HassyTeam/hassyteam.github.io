@@ -1,58 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
-
-
-h1,h2,h3,p{
-    font-family: 'Nunito', sans-serif;
+body{
+    background: url(bg_new.png) no-repeat center center fixed; 
+    background-size: 100% 100%;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
-body {
-    background: linear-gradient(252deg, #000AFF 0%, #00E0FF 100%);
-}
+#draggable {
+    position: absolute;
+    z-index: 9;
+    background-color: #313131;
+    text-align: center;
+  }
+  
+  #draggableheader {
+    cursor: move;
+  }
 
 .pfp{
-    width: 300px;
-    height: 300px;
-    border-radius: 69px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    color: black; background: rgba(0, 0, 0, 0);
+    white-space:pre;
+    letter-spacing:0;
+    line-height:1.4;
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size:4px;
+    text-align: left;
+    float:left;
+    display:block;
+    padding-left: 2px;
 }
 
-.hi-im-xilliam{
-    color: #FFF;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 400;
+.command {
+    text-align: left;
+    font-size: 15px;
+    padding-left: 2px;
 }
 
-.about-small{
-    color: #FFF;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
+.about {
+    text-align: left;
+    font-size: 15px;
+    padding-left: 47%;
+    color: white;
 }
 
-.about{
-    width: 1154px;
-    height: 412px;
-    flex-shrink: 0;
-    border-radius: 26px;
-    background: #FFF;
-    margin: auto;
-    padding: 10px;
+.highlight{
+    color: chartreuse;
+    font-weight: bold;
 }
 
-.about-text{
-    color: #000;
-    font-family: Kufam;
-    font-size: 31px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 1%;
-    line-height: 50px;
+p {
+    display: inline;
 }
 
-  
+.box {
+    width: 350px;
+}
