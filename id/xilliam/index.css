@@ -23,7 +23,7 @@ body{
     letter-spacing:0;
     line-height:1.4;
     font-family: 'Ubuntu Mono', monospace !important;
-    font-size:4px;
+    font-size:0.25rem;
     text-align: left;
     float:left;
     display:block;
@@ -32,13 +32,13 @@ body{
 
 .command {
     text-align: left;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding-left: 2px;
 }
 
 .about {
     text-align: left;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-left: 47%;
     color: white;
 }
