@@ -36,6 +36,10 @@ body{
     padding-left: 2px;
 }
 
+.cowinput {
+    font-size: 0.9375rem;
+}
+
 .about {
     text-align: left;
     font-size: 0.875rem;
