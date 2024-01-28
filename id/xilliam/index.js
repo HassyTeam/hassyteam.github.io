@@ -2,12 +2,16 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("info"));
 dragElement(document.getElementById("cow"));
+dragElement(document.getElementById("donate"));
 
 document.getElementById("info").style.top = "30" + "px";
 document.getElementById("info").style.left = "50" + "px";
 
 document.getElementById("cow").style.top = "600" + "px";
 document.getElementById("cow").style.left = "80" + "px";
+
+document.getElementById("donate").style.top = "500" + "px";
+document.getElementById("donate").style.left = "700" + "px";
 
 
 
