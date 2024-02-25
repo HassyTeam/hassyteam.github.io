@@ -15,6 +15,9 @@ hassyteam.github.io
 |- fun (Self-explanatory, you can go check it out!)
 |- id (This folder contains personal webpages for our team members)
 |  |- xilliam
+|- siiga (This folder contains info and downloads for the SIIGA screensaver)
+|- suite (This folder contains info and downloads for the Hassembly Software Suite)
+|
 |- CNAME (Github Pages domain config)
 |- LICENSE (Self-explanatory)
 |- index.html (Homepage)
