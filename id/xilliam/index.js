@@ -84,7 +84,7 @@ function makecowsay(txt){
 }
 
 document.getElementById('cowinput').style.width="600px";
-document.getElementById('cowinput').value="what do you have on your mind?"
+document.getElementById('cowinput').value="you can actually type here?"
 const input = document.getElementById('cowinput'); 
      
 input.addEventListener('input', function() { 
