@@ -1,3 +1,5 @@
+<!-- no this is not written by ai, i just like that gradient (and xillu too) -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +9,7 @@
     <meta name="keywords" content="assembly,demoscene,demozoo,hassyteam,Hassy Team">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      * {box-sizing: border-box;}
       h1,h2,h3,h4,h5,h6,p {
         padding: 0;
         margin: 0;
@@ -73,6 +76,36 @@
           padding: calc(16px + 0.67em); /* size of gutter */
         }
       }
+
+      .aseintti-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 0px;
+        max-height: 75px;
+        max-width: 100%;
+        background-image: url("./aseintti_footer_back.png");
+        background-repeat: repeat-x;
+        background-size: auto 75px;
+      }
+
+      .aseintti-footer-container {
+          max-height: 75px;
+          padding-bottom: 4px;
+          text-align: center;
+          font-family: sans-serif;
+      }
+
+      .aseintti-footer-container p {
+          color: #fff;
+          margin: 0;
+          padding-top: 26px;
+      }
+
+      .aseintti-footer-container a {
+          color: #07f
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0; color: white; background: #0e0e0e; font-family: 'Comic Sans MS', sans-serif">
@@ -136,6 +169,11 @@
           </b>
         </div>
         <span>tää on iha kamalaa koodia åä</span>
+      </div>
+    </div>
+    <div class="aseintti-footer">
+      <div class="aseintti-footer-container">
+        <p>See website <a href="https://github.com/HassyTeam/hassyteam.github.io">source code & commit history</a></p>
       </div>
     </div>
   </body>
