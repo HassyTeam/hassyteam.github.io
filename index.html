@@ -1,71 +1,135 @@
-<head>
-  <title>hassyteam</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="hassy team">
-  <meta name="keywords" content="assembly,demoscene,demozoo,hassyteam">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  @keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%; 
-    }
-    100% {
-        background-position: 0% 50%; 
-    }
-}
-</style>
-</head>
-<body style="margin: 0; padding: 0; color: white; background: #0e0e0e; font-family: 'Comic Sans MS', sans-serif">
-<div style="height: 100vh; padding: 0; background: linear-gradient(108deg, #B42ECA 0%, #B29600 100%); animation: gradientMove 5s ease infinite;">
-here at hassy team(tm) first we ass then we embly<br><br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hassyteam</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="hassy team">
+    <meta name="keywords" content="assembly,demoscene,demozoo,hassyteam,Hassy Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1,h2,h3,h4,h5,h6,p {
+        padding: 0;
+        margin: 0;
+      }
+      /*h1,h2,h3,h4,h5,h6,p,li,span {
+        text-shadow: 2px 2px 8px rgb(from #0e0e0e r g b / 50%);;
+      }*/
+      @keyframes gradientMove {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%; 
+        }
+        100% {
+            background-position: 0% 50%; 
+        }
+      }
+      .container {
+        display: grid;
+        color: white;
+        /* From https://css.glass */
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 16px;
+        border-radius: 8px;
+        margin: 16px;
+        gap: calc(16px + 0.67em);
+        max-width: 100vw;
+      }
 
-we assembly
+      .container {
+        grid-template-areas:
+          "about"
+          "projects"
+          "team";
+      }
+    
+      @media (min-width: 768px) {
+        .container {
+          grid-template-areas:
+            "about team"
+            "projects team";
+          grid-template-columns: 2.5fr 1.5fr;
+        }
+        .columnDivider {
+          border-left: 1px solid rgba(255, 255, 255, 0.3);
+          margin:-16px; /* size of gutter */
+          padding: calc(16px + 0.67em); /* size of gutter */
+        }
+        .columnDivider-top {
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+          margin:-16px; /* size of gutter */
+          padding: calc(16px + 0.67em); /* size of gutter */
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0; color: white; background: #0e0e0e; font-family: 'Comic Sans MS', sans-serif">
+    <div style="min-height: 100vh; height: 100%; padding: 0; background: linear-gradient(108deg, #B42ECA 0%, #B29600 100%); background-size: 400% 400%; animation: gradientMove 5s ease infinite;">
+      here at hassy team(tm) first we ass then we embly<br><br>
 
-<div style="display: grid; grid-template-columns: auto auto; color: white; background: #0e0e0e; padding: 16px; border-radius: 8px; margin: 16px; gap: 16px">
-  <div style="width:max-content; max-width:100vw; text-wrap: wrap;"><h1>about us</h1><br>
-    <p>hello! we are a small team/friend group of weird people that like assembly (the demoparty). some of us know how to code, most of us know how to art, and all of us know how to breathe (i think). have fun going through our projects (they are usually not that good). bye!</p></div>
-  <div style="width:max-content"><h1>team members;</h1><br>
-  <b>
-  <ul>
-    <li>hassunaama</li>
-    <li>mr. assy</li>
-    <li>earlgrayness</li>
-    <li>Daniel "banskudansku" Tuomola</li>
-    <li>alfie / cosmoere</li>
-    <li>icarus</li>
-    <li>vechozzz</li>
-    <li>marckå</li>
-    <li>skittles</li>
-    <li>adella</li>
-    <li>kala</li>
-    <li>bexion</li>
-    <li>turfy</li>
-    <li>lemonade4you</li>
-    <li>kaikki ne 5 alfien kaveria</li>
-    <li>paahtoleip4</li>
-    <li>silvo</li>
-    <li>vauhkojupiter</li>
-    <li>antti i guess</li>
-    </ul><br>
-    </b>
-varmaa enemmänki<br>
-also gimle maybe idk<br><br>
+      we assembly
 
-also <h1>xilliam. kiitos työstäsi :D</h1> (also sori xillu et tein toiset sivut, halusin lol t. hassunaama)</div>
-<div style="width:max-content">
-  <div style="width:max-content"><h1>projektit;</h1><br>
-  <b>
-  <ul>
-    <li>prettysliders - infoscreen assemblyille</li>
-    <li>biisiseikkailu - grillattu käpy</li>
-<li>kato <a href="https://demozoo.org/groups/138143/">demozoosta</a> loput</li>
-    </ul><br>
-    </b>
-</div>
-tää on iha kamalaa koodia åä
-</div>
-</div>
-</body>
+      <div class="container">
+        <div style="text-wrap: wrap; grid-area: about; padding: 0.67em;">
+          <h1>about us</h1>
+          <br>
+          <p>hello! we are a small team/friend group of weird people that like assembly (the demoparty).
+            some of us know how to code, most of us know how to art, and all of us know how to breathe (i think).
+            have fun going through our projects (they are usually not that good). bye!
+          </p>
+        </div>
+        <div style="grid-area: team;" class="columnDivider">
+          <h1>team members;</h1>
+          <br>
+          <b>
+            <ul>
+              <li>hassunaama</li>
+              <li>mr. assy</li>
+              <li>earlgrayness</li>
+              <li>Daniel "banskudansku" Tuomola</li>
+              <li>alfie / cosmoere</li>
+              <li>icarus</li>
+              <li>vechozzz</li>
+              <li>marckå</li>
+              <li>skittles</li>
+              <li>adella</li>
+              <li>kala</li>
+              <li>bexion</li>
+              <li>turfy</li>
+              <li>lemonade4you</li>
+              <li>kaikki ne 5 alfien kaveria</li>
+              <li>paahtoleip4</li>
+              <li>silvo</li>
+              <li>vauhkojupiter</li>
+              <li>antti i guess</li>
+            </ul>
+            <br>
+          </b>
+          <span>varmaa enemmänki</span><br>
+          <span>also gimle maybe idk</span><br><br>
+
+          <span>also <h1>xilliam. kiitos työstäsi :D</h1> (also sori xillu et tein toiset sivut, halusin lol t. hassunaama)</span>
+      </div>
+      <div style="grid-area: projects;" class="columnDivider-top">
+        <div style="width:max-content">
+          <h1>projektit;</h1>
+          <br>
+          <b>
+            <ul>
+              <li>prettysliders - infoscreen assemblyille</li>
+              <li>biisiseikkailu - grillattu käpy</li>
+              <li>kato <a href="https://demozoo.org/groups/138143/">demozoosta</a> loput</li>
+            </ul>
+            <br>
+          </b>
+        </div>
+        <span>tää on iha kamalaa koodia åä</span>
+      </div>
+    </div>
+  </body>
+</html>
